@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Shaka player built-in UI example</title>
+    <meta charset="UTF-8" />
+    <!-- for the sake of this article we use a sandbox path to shaka styles -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="node_modules/shaka-player/dist/controls.css"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+
+  <body>
+    <!-- We need a container to build the UI on top of it -->
+    <div id="container" style="width: 100%; height: 100%">
+      <video autoplay id="video"></video>
+    </div>
+
+    <!-- add client-side IMA SDK -->
+    <script
+      type="text/javascript"
+      src="https://imasdk.googleapis.com/js/sdkloader/ima3.js"
+    ></script>
+    <script type="module" src="src/index.js"></script>
+  </body>
+</html>
